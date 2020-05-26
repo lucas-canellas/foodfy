@@ -1,23 +1,23 @@
 .container {
-  max-width: 940px;
-  margin: 0 auto;
-  
+max-width: 940px;
+margin: 0 auto;
+
 }
 
 main {
-  min-height: calc(100vh - 93px - 76px );
-  margin-bottom: 50px;
+min-height: calc(100vh - 93px - 76px );
+margin-bottom: 50px;
 }
 
 * {   
-  color: #111111; 
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
-  
+color: #111111; 
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+
 }
 
 a {
-  text-decoration: none;
-  color: black;
+text-decoration: none;
+color: black;
 }
 
 
@@ -27,179 +27,231 @@ a {
 /* HEADER */
 
 .header { 
-  display: grid;  
-  height: 93px;  
-  grid-template-columns: 213px 727px;
-  align-items: center;
+display: grid;  
+height: 93px;  
+grid-template-columns: 213px 727px;
+align-items: center;
 }
 
 .header ul li {
-  display: inline;
+display: inline;
 }
 
 .header a {
-  margin-right: 30px ;  
+margin-right: 30px ;  
 }
 
 /* INTRODUCAO */
 
 .introducao {
-  display: grid;
-  position: relative;
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
-  height: 366px;
-  background:#FBDFDB ;
-  border-radius: 30px ;
-  align-items: center;
-  margin-bottom: 50px;
+display: grid;
+position: relative;
+grid-template-columns: 1fr 1fr;
+width: 100%;
+height: 366px;
+background:#FBDFDB ;
+border-radius: 30px ;
+align-items: center;
+margin-bottom: 50px;
 }
 
 .texto-intro{
-  position: absolute;
-  left: 60px;
-  width: 316px;
+position: absolute;
+left: 60px;
+width: 316px;
 }
 
 .texto-intro h1 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 32px;
-  margin-bottom: 10px ;
+font-family: 'Roboto', sans-serif;
+font-size: 32px;
+margin-bottom: 10px ;
 }
 
 .texto-intro p {
-  opacity: 0.7;
-  font-size: 18px;
-  color: #000000;
-  line-height: 28px;
+opacity: 0.7;
+font-size: 18px;
+color: #000000;
+line-height: 28px;
 }
 
 .introducao img {
-  position: absolute;
-  right: 100px;
-  bottom: 0;
+position: absolute;
+right: 100px;
+bottom: 0;
 }
 
 /* CONTEUDO */
 
 .conteudo h2 {
-  font-weight: bold;
-  font-size: 24px;
-  margin-bottom: 20px;
+font-weight: bold;
+font-size: 24px;
+margin-bottom: 20px;
 }
 
 .refeicoes {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 20px;
-  row-gap: 30px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+column-gap: 20px;
+row-gap: 30px;
 
 }
 
 .refeicao img{
-   width: 100%;
-   border-radius: 15px;  
+width: 100%;
+border-radius: 15px;  
+cursor: pointer;
 }
 
 .refeicao h3 {
-  font-size: 18px;
+font-size: 18px;
 }
 
 .refeicao p {
-  font-size: 14px;
-  color: #777777;
+font-size: 14px;
+color: #777777;
 }
 
 /* FOOTER */
 
 .footer { 
-  padding: 30px;
-  background: #EEEEEE;
+padding: 30px;
+background: #EEEEEE;
 }
 
 .footer p {
-  text-align: center;
-  font-size: 14px;
-  color: #999999; 
+text-align: center;
+font-size: 14px;
+color: #999999; 
 }
 
 
 /* === ABOUT === */
 
 .content-about h1 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 20px;
 }
 
 .content-about h2 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 30px;
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 30px;
 }
 
 .content-about p {
-  font-size: 18px;
-  color: #444444;
-  line-height: 28px;
-  margin-bottom: 30px;
+font-size: 18px;
+color: #444444;
+line-height: 28px;
+margin-bottom: 30px;
 }
 
 /* === DETAILS RECIPE === */
 
 .banner {
-  margin-bottom: 50px;
+margin-bottom: 50px;
 }
 
 .banner img {
-  width: 100%;
-  height: 280px;
-  border-radius: 15px;
-  margin-bottom: 50px;
+width: 100%;
+height: 280px;
+border-radius: 15px;
+margin-bottom: 50px;
 }
 
 .txt {
-  text-align: center;
+text-align: center;
 }
 
 .txt h1 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 4px;
+font-size: 36px;
+font-weight: bold;
+margin-bottom: 4px;
 }
 
 .txt p {
-  font-size: 20px;
-  color: #777777;
+font-size: 20px;
+color: #777777;
 }
 
 /* INGREDIENTS */
 
 
-
-.ingredients-preparo h2 {
-  font-weight: bold;
-  font-size: 24px;
-  margin-bottom: 20px;
+.ingredientes h2 {
+font-weight: bold;
+font-size: 24px;
+margin-bottom: 20px;
 }
 
-.ingredients-preparo ul li {
-  font-size: 18px;
-  color: #444444;
-  line-height: 28px;
+.ativo {
+display: none;
+visibility: hidden;
 }
 
-.ingredients-preparo ul {
-  margin-bottom: 40px;
+.ingredientes ul li {
+font-size: 18px;
+color: #444444;
+line-height: 28px;
+}
+
+.ingredientes {
+margin-bottom: 40px;
+}
+
+.preparo h2 {
+font-weight: bold;
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+.preparo ul li {
+font-size: 18px;
+color: #444444;
+line-height: 28px;
+}
+
+.preparo {
+margin-bottom: 40px;
+}
+
+.infos h2 {
+font-weight: bold;
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+.infos ul li {
+font-size: 18px;
+color: #444444;
+line-height: 28px;
+}
+
+.infos {
+margin-bottom: 40px;
 }
 
 .infos p {
-  font-size: 18px;
-  color: #444444;
-  line-height: 28px;
+font-size: 18px;
+color: #444444;
+line-height: 28px;
 }
 
+.mostrar {
+display: flex;
+align-items: baseline;
 
+
+}
+
+.mostrar h2 {
+margin-right: 8px;  
+}
+
+.mostrar p {
+font-size: 12px;
+color: #999999;
+cursor: pointer;
+}
 
 
 
