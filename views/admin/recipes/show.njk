@@ -1,0 +1,54 @@
+{% extends 'layout-admin.njk' %}
+
+{% block content %}
+  <main class="container">
+    <div class="titulo-button">
+      <h1>Receita: {{items.title}}</h1>
+      <button>Editar receita</button>
+    </div>
+    <div class="banner container">
+      <img src="{{items.image}}" alt="">
+      <div class="txt">
+        <h1>{{items.title}}</h1>
+        <p>por
+          {{items.author}}</p>
+      </div>
+    </div>
+    <div class="ingredientes container">
+      <div class="mostrar">
+        <h2>Ingredientes</h2>
+        <p class='mostrar-txt' id="ingredientes">mostrar</p>
+      </div>
+      <ul class="mostrar-ingrediente">
+        {% for item in items.ingredients %}
+          <li>
+            {{item}}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="preparo container">
+      <div class="mostrar">
+        <h2>Modo de preparo</h2>
+        <p class='mostrar-txt' id="preparo">mostrar</p>
+      </div>
+
+      <ul class="mostrar-preparo">
+        {% for item in items.preparation %}
+          <li>
+            {{item}}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="infos container">
+      <div class="mostrar">
+        <h2>Informações adicionais</h2>
+        <p class='mostrar-txt' id="infos">mostrar</p>
+      </div>
+      <p class="mostrar-info">{{items.information}}</p>
+    </div>
+
+  </main>
+  <script src="/script.js"></script>
+{% endblock %}
