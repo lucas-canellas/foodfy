@@ -1,5 +1,6 @@
 const express = require('express')
 const routes = express.Router()
+const fs = require('fs')
 
 const data = require('./data.json')
 
@@ -52,5 +53,50 @@ routes.get("/admin/recipes/:id/edit", function (req, res) {
 
     return res.render('admin/recipes/edit', { items: recipe })
 })
+
+routes.post("/admin/recipes", function(req, res) {
+
+    const keys = Object.keys(req.body)
+
+    for(key of keys) {
+        if(req.body[key] == ""){
+          return res.send('Please, fill all fields!')
+        }
+    
+    }
+    
+    let {image, ingredients, preparation, information } = req.body
+
+    const id = Number(data.recipes.length)
+
+    data.recipes.push({
+        id,
+        image,
+        ingredients,
+        preparation,
+        information
+    })
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
+        if(err) {
+          throw err;
+        }
+        
+        return res.redirect(`/admin/recipes/${id}`)
+    })
+
+    
+})
+
+routes.put("/admin/recipes", function(req,res) { 
+  
+    
+    
+    
+   
+    return res.send()
+}) // Editar uma receita
+
+
 
 module.exports = routes

@@ -56,7 +56,27 @@ mostrar.forEach(e => {
     })
   }
 
+})
 
+// admin
+
+const cardAdmin = document.querySelectorAll(".card-admin a")
+
+cardAdmin.forEach(card => {
+  card.addEventListener('click', function(event) {
+        
+    window.location.href = `/admin/recipes/${card.id}`
+  })
+})
+
+const buttonEdit = document.querySelector(".titulo-button button")
+
+buttonEdit.addEventListener('click', function() {
+  console.log(buttonEdit.id);
+  const id = buttonEdit.id
+
+  window.location.href = `/admin/recipes/${id}/edit`  
+  
 })
 
 
